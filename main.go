@@ -24,6 +24,12 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
+// Unused function
+func unused() {
+	//this function does nothing
+	//and is called nowhere
+}
+
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
