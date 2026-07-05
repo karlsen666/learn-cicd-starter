@@ -94,8 +94,8 @@ func main() {
 
 	router.Mount("/v1", v1Router)
 	srv := &http.Server{
-		Addr:    ":" + safePort,
-		Handler: router,
+		Addr:              ":" + safePort,
+		Handler:           router,
 		ReadHeaderTimeout: 5,
 	}
 
